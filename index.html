@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="image/icS.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <li><a href="catalog1.html" class="point">Для невесты</a></li>
+            <li><a href="index.html" class="point">Каталог</a></li>
+            <li><a href="index.html" class="point">Главная</a></li>
+            <li><a href="profile.html" class="point">Профиль</a></li>
+            <li><a href="enter.html" class="point">Войти</a></li>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="h1">Ceremony</div>
+        <div class="h2">
+            <div class="hit">записаться на</div>
+            <div class="other">примерку</div>
+        </div>
+    </div>
+    <section>
+        <div class="order">
+            <div class="name">
+                <h2>КОРЗИНА</h2>
+            </div>
+            <ul id="cart"></ul>
+            <p>Общее количество товаров: <span id="totalCount"></span></p>
+        </div>
+        <div class="name">
+            <h2>ВЫБЕРИТЕ ТОВАРЫ</h2>
+        </div>
+          <ul id="productList">
+            <li><img src="img/платье1.png" class="photo"> Платье “Снежана” <button class="addToCart" data-product="Платье “Снежана”">Добавить в корзину</button></li>
+            <li><img src="img/платье3.png" class="photo">Платье “Белый лебедь”<button class="addToCart" data-product="Платье “Белый лебедь”">Добавить в корзину</button></li>
+            <li><img src="img/платье2.png" class="photo">Платье “Золушка”<button class="addToCart" data-product="Платье “Золушка”">Добавить в корзину</button></li>
+        </ul> 
+        <hr>
+        <div class="sale">
+            <div class="name">
+                <h1>свадебные платья из новой коллекции</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="photo"><img src="img/платье1.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Снежана”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/платье3.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Белый лебедь”</div>
+                    <div class="description">46 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/платье2.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Золушка”</div>
+                    <div class="description">65 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/платье1.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Снежана”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/платье3.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Белый лебедь”</div>
+                    <div class="description">46 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/платье2.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Золушка”</div>
+                    <div class="description">65 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/image 6.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Белый лебедь”</div>
+                    <div class="description">46 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/image 7.png" alt="card_photo"></div>
+                    <div class="name_card">Платье “Золушка”</div>
+                    <div class="description">65 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="sale">
+            <div class="name">
+                <h1>свадебные платья из новой коллекции</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="photo"><img src="img/мужик1.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Снегирь”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик2.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Оленёнок”</div>
+                    <div class="description">46 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик3.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Леопольд”</div>
+                    <div class="description">65 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик4.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Сергей”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик3.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Леопольд”</div>
+                    <div class="description">65 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик4.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Сергей”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+
+                <div class="card">
+                    <div class="photo"><img src="img/мужик1.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Снегирь”</div>
+                    <div class="description">53 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="photo"><img src="img/мужик2.png" alt="card_photo"></div>
+                    <div class="name_card">Костюм “Оленёнок”</div>
+                    <div class="description">46 000р</div>
+                    <a href="order.html" class="btn_card">Купить</a>
+                </div>
+            </div>
+
+    </section>
+    <footer>
+        <div class="menu_footer">
+            <div class="level">
+                <li><a href="catalog2.html" class="ft_point">для жениха</a></li>
+                <li><a href="catalog1.html" class="ft_point">для невесты</a></li>
+                <li><a href="index.html" class="ft_point">каталог</a></li>
+            </div>
+            <div class="logo_ft"><img src="img/Ceremony.png" class="logo_icon"></div>
+            <div class="level">
+                <li><a href="enter.html" class="ft_point"> войти</a></li>
+                <li><a href="profile.html" class="ft_point">профиль</a></li>
+                <li><a href="index.html" class="ft_point">примерка</a></li>
+            </div>
+        </div>
+        <hr>
+        <div class="p">© Photo, Inc. 2019. We love our users!</div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            let totalCount = 0;
+
+            $('.addToCart').click(function () {
+                const productName = $(this).data('product');
+                $('#cart').append(
+                    '<li class ="card-item">' + '<img src="img/платье1.png" class="photo">' + productName + '<button class="removeFromCart">удалить</button><li>'
+                );
+                totalCount++;
+                $('#totalCount').text(totalCount);
+            });
+
+            $('#cart').on('click', '.removeFromCart', function () {
+                $(this).closest('.card-item').remove();
+                totalCount--;
+                $('#totalCount').text(totalCount);
+            });
+        });
+    </script>
+</body>
+
+</html>

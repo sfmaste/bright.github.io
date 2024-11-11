@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Оформление заказа</h1>
+     
+        
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="fullName">Город:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="price">Цена:</label>
+                <input type="text" id="price" name="price" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Адрес доставки:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="data">Дата:</label>
+                <input type="text" id="data" name="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Выберите товар:</label>
+                <select id="product" name="product" required>
+                    <option value="платье">Платье "Снежана"</option>
+                    <option value="платье">Платье "Белый лебедь"</option>
+                    <option value="платье">Платье "Золушка"</option>
+                    <option value="платье">Костюм "Снегирь"</option>
+                    <option value="платье">Костюм "Олененок"</option>
+                    <option value="другой_товар">Другой товар</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <button type="submit" class="submit-button">Заказать</button>
+        </form>
+        
+        <div id="confirmationMessage" class="hidden">
+            <h2>Спасибо за ваш заказ!</h2>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('orderForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+
+            // Здесь можно добавить обработку данных и отправку на сервер
+
+            form.reset(); // Сбрасываем форму
+            confirmationMessage.classList.remove('hidden'); // Показываем сообщение о подтверждении
+        });
+    </script>
+    
+</body>
+</html>
+
+

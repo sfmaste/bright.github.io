@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Inter-bold";
+    src: url(font/Inter-Bold.otf);
+}
+@font-face {
+    font-family: "Inter-regular";
+    src: url(font/Inter-Regular.otf);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAE3DB;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #AD9D8E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #AD9D8E;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
